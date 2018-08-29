@@ -239,7 +239,7 @@ ParallaxSwiper.propTypes = {
   progressBarThickness: PropTypes.number,
   progressBarBackgroundColor: PropTypes.string,
   progressBarValueBackgroundColor: PropTypes.string,
-  keyboardShouldPersistTaps: PropTypes.oneOf(['always', 'never', 'handled', 'false', 'true')])
+  keyboardShouldPersistTaps: PropTypes.oneOf(['always', 'never', 'handled', 'false', 'true']),
 };
 
 ParallaxSwiper.defaultProps = {
