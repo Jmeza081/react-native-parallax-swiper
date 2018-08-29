@@ -81,6 +81,7 @@ class ParallaxSwiper extends Component {
       progressBarThickness,
       progressBarBackgroundColor,
       progressBarValueBackgroundColor,
+      keyboardShouldPersistTaps
     } = this.props;
 
     return (
@@ -89,6 +90,7 @@ class ParallaxSwiper extends Component {
           ref={(scrollView) => {
             this.animatedScrollView = scrollView;
           }}
+          keyboardShouldPersistTaps={keyboardShouldPersistTaps}
           scrollEnabled={scrollEnabled}
           style={{
             width: vertical
@@ -237,6 +239,7 @@ ParallaxSwiper.propTypes = {
   progressBarThickness: PropTypes.number,
   progressBarBackgroundColor: PropTypes.string,
   progressBarValueBackgroundColor: PropTypes.string,
+  keyboardShouldPersistTaps: PropTypes.oneOf(['always', 'never', 'handled', 'false', 'true')])
 };
 
 ParallaxSwiper.defaultProps = {
